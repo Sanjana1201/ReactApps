@@ -1,0 +1,13 @@
+.Message-div{
+    text-align: center;
+    display: flex;
+    width: 500px;
+    align-items: center;
+    color: white;
+    margin: 20px;
+    border-radius: 2px;
+}
+
+.Symbol{
+    width: 20px;
+}
