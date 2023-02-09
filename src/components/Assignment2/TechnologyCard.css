@@ -1,0 +1,16 @@
+.cardDiv{
+    width: 400px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.techName{
+    font-weight: 600;
+}
+.techImg{
+    width: 100px;
+    float: right;
+}
