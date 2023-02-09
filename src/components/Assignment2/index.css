@@ -1,0 +1,15 @@
+
+.learnTechnologyDiv{
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    padding-top: 4%;
+    /* background-color: #f4faff; */
+}
+.learnTechnologyOuterDiv{
+    background-color: #f4faff;
+    height: 100vh;
+}

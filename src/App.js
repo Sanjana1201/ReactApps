@@ -1,8 +1,13 @@
-import Notification from './components/Assignment1/index.js';
+// import NotificationSection from './components/Assignment1/index.js';
+import TechnologySection from './components/Assignment2/index.js';
 
 function App() {
   return (
-    <Notification />
+    <div>
+      {/* <NotificationSection /> */}
+      <TechnologySection />
+    </div>
+    
   );
 }
 
