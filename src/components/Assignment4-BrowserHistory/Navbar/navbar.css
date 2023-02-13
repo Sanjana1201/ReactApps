@@ -1,0 +1,43 @@
+.main-container{
+    background-color: #3367d6;
+    display: flex;
+    padding: 15px 30px;
+}
+
+.logo-img{
+    margin: auto 10px;
+}
+
+input {
+    height: 20px;
+    background-color: #2850a7;
+    border: 1px solid #6697ff;
+    border-radius: 2px;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.6;
+    font-size: 15px;
+}
+
+input[type=text]:focus {
+    color: white;
+    outline: none;
+}
+
+.search-img{
+    background-color: #2850a7;
+    padding: 10px 20px;
+    border: 1px solid #6697ff;
+}
+.search-bar{
+    display: flex;
+    margin: auto;
+    
+    
+}
