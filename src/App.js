@@ -2,7 +2,8 @@
 // import TechnologySection from './components/Assignment2/index.js';
 // import ClickCounter from './components/Practice1_clockCounter/index/index.js';
 // import LightDarkMode from './components/Assignment3-Light&DarkMode/index/index.js';
-import LiftingStateUp from './components/Practice2_LiftingStateUp/index.js'
+// import LiftingStateUp from './components/Practice2_LiftingStateUp/index.js'
+import BrowserHistory from './components/Assignment4-BrowserHistory/index/index.js'
 
 
 function App() {
@@ -12,7 +13,9 @@ function App() {
       {/* <TechnologySection /> */}
       {/* <ClickCounter /> */}
       {/* <LightDarkMode /> */}
-      <LiftingStateUp />
+      {/* <LiftingStateUp /> */}
+      <BrowserHistory />
+      
     </div>
     
   );
