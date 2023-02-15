@@ -41,10 +41,10 @@ class SearchResults extends Component{
         //     return <SearchHistoryCard historyId ={id} historyTime = {timeAccessed} historyLogoUrl ={logoUrl} historyTitle={title} historyDomainUrl={domainUrl} />
         // });
         return(
-            <div className='container'>
+            <div className='history-container'>
                 {/* {newFilterValue} */}
                 {/* {filteredComponents} */}
-                {testData.length===0? <div className='no-history'>There is no history to show</div>:<div className='history-cars-container'>{testData}</div>}
+                {testData.length===0? <div className='no-history'>There is no history to show</div>:<div className='history-cards-container'>{testData}</div>}
             </div>
         )
     }

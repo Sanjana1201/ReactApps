@@ -1,14 +1,14 @@
-.main-container{
+.history-search-main-container{
     background-color: #3367d6;
     display: flex;
     padding: 15px 30px;
 }
 
-.logo-img{
+.BrowserHistory-logo-img{
     margin: auto 10px;
 }
 
-input {
+.history-input {
     height: 20px;
     background-color: #2850a7;
     border: 1px solid #6697ff;
@@ -19,23 +19,23 @@ input {
     font-family: 'Montserrat', sans-serif;
 }
 
-::placeholder {
+.history-input::placeholder {
     color: white;
     opacity: 0.6;
     font-size: 15px;
 }
 
-input[type=text]:focus {
+.history-input:focus {
     color: white;
     outline: none;
 }
 
-.search-img{
+.history-search-img{
     background-color: #2850a7;
     padding: 10px 20px;
     border: 1px solid #6697ff;
 }
-.search-bar{
+.history-search-bar{
     display: flex;
     margin: auto; 
 }

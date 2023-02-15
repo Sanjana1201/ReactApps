@@ -7,7 +7,7 @@ const TechnologyList = ()=>{
         const {TechnologyId,TechnologyName,TechnologyDescription,TechnologyImageUrl,TechnologyType} = eachData;
         return <TechnologyCard key = {TechnologyId} type={TechnologyType} name= {TechnologyName} description = {TechnologyDescription} imageUrl ={TechnologyImageUrl}/>
     });
-    return <div className="cardContainer">{cardList}</div>;
+    return <div className="technology-card-container">{cardList}</div>;
 }
 
 export default TechnologyList;

@@ -42,9 +42,9 @@ class RenderPasswords extends Component{
                         <h2>Your password</h2>
                         <div className="display-number">{numberOfPasswords}</div>
                     </div>
-                    <div className="search-bar" id="searchBar">
-                        <img src = "https://assets.ccbp.in/frontend/react-js/password-manager-search-img.png" alt="website" className="search-img"/>
-                        <input type="text" placeholder="Search" onChange={this.searchPassword}/>
+                    <div className="all-password-search-bar" id="searchBar">
+                        <img src = "https://assets.ccbp.in/frontend/react-js/password-manager-search-img.png" alt="website" className="all-password-search-img"/>
+                        <input type="text" placeholder="Search" onChange={this.searchPassword} className="all-password-input"/>
                     </div>
                 </div>
                 <div className="password-background">

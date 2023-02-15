@@ -1,25 +1,37 @@
-// import NotificationSection from './components/Assignment1/index.js';
-// import TechnologySection from './components/Assignment2/index.js';
-// import ClickCounter from './components/Practice1_clockCounter/index/index.js';
-// import LightDarkMode from './components/Assignment3-Light&DarkMode/index/index.js';
-// import LiftingStateUp from './components/Practice2_LiftingStateUp/index.js'
-// import BrowserHistory from './components/Assignment4-BrowserHistory/index/index.js';
-import PasswordManager from './components/Assignment5-PasswordManager/index/index.js';
+import { BrowserRouter, Route,Switch} from "react-router-dom";
+
+import NotificationSection from './components/Assignment1';
+import TechnologySection from './components/Assignment2';
+import ClickCounter from './components/Practice1_clockCounter/index';
+import LightDarkMode from './components/Assignment3-Light&DarkMode/index';
+import LiftingStateUp from './components/Practice2_LiftingStateUp'
+import BrowserHistory from './components/Assignment4-BrowserHistory/index';
+import PasswordManager from './components/Assignment5-PasswordManager/index';
+import HomePage from './components/Home/index.js';
 
 
-function App() {
-  return (
-    <div>
-      {/* <NotificationSection /> */}
-      {/* <TechnologySection /> */}
-      {/* <ClickCounter /> */}
-      {/* <LightDarkMode /> */}
-      {/* <LiftingStateUp /> */}
-      {/* <BrowserHistory /> */}
-      <PasswordManager />
-    </div>
-    
-  );
+const App = () => {
+  return(
+    <BrowserRouter>
+    <HomePage />
+    <Switch>
+      <Route exact path = "/path1" component={NotificationSection}/>
+      <Route exact path = "/path2" component ={TechnologySection} />
+      <Route exact path = "/path3" component ={ClickCounter} />
+      <Route exact path = "/path4" component ={LightDarkMode} />
+      <Route exact path = "/path5" component ={LiftingStateUp} />
+      <Route exact path = "/path6" component ={BrowserHistory} />
+      <Route exact path = "/path7" component ={PasswordManager} />
+        {/* <NotificationSection />
+        <TechnologySection />
+        <ClickCounter />
+        <LightDarkMode />
+        <LiftingStateUp />
+        <BrowserHistory />
+        <PasswordManager /> */}
+        </Switch>
+    </BrowserRouter>
+  )
 }
 
 export default App;

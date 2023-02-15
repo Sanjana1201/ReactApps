@@ -31,7 +31,7 @@ const card = (props)=>{
     }
     return (
         <div className="Message-div" style={{backgroundColor: color}}>
-            <img src = {image} alt="icon" className='Symbol'   />
+            <img src = {image} alt="icon" className='msg-symbol'   />
             <p>{message}</p>
         </div>
     );

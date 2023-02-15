@@ -83,9 +83,9 @@ class ManagePassword extends Component{
 
     render(){
         return(
-            <div className="main-container">
-                <div className="content-container">
-                    <img src="https://assets.ccbp.in/frontend/react-js/password-manager-logo-img.png" alt="app-logo" className="app-logo"/>
+            <div className="password-main-container">
+                <div className="password-content-container">
+                    <img src="https://assets.ccbp.in/frontend/react-js/password-manager-logo-img.png" alt="app-logo" className="password-app-logo"/>
                     <NewPassword  renderNewlyAddedPassword = {this.addNewPassword} setValues = {this.state.inputBoxValue} editDone={this.handleEditDone}/>
                     <NewPasswordList passwordNewList = {this.state.filterValue} updateResults={this.newResult} updatePassword={this.makePassowrdVisible} updateData={this.updatePasswordList} updateExistingData={this.editFields}/>
                 </div>
