@@ -17,8 +17,8 @@ class lightDarkContainer extends Component{
     render(){
         console.log(this.state.mode);
         return(
-            <div className="main-container">
-                <div style={{backgroundColor: this.state.modeColor}} className="container">
+            <div className="lnd-main-container">
+                <div style={{backgroundColor: this.state.modeColor}} className="lnd-container">
                     <h2 style={{color: this.state.modeColor==="black"? "white":"black"}}>Click to change mode</h2>
                     <button onClick={this.changeMode}>{this.state.mode} Mode</button>
                 </div>

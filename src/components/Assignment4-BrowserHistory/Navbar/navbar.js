@@ -9,11 +9,11 @@ class HistorySearch extends Component{
     }
     render(){
         return (
-            <div className="main-container">
-                <img src = "https://assets.ccbp.in/frontend/react-js/history-website-logo-img.png" alt = "app logo" className="logo-img"/>
-                <div className="search-bar">
-                    <img src = "https://assets.ccbp.in/frontend/react-js/search-img.png" alt = "search" className="search-img"/>
-                    <input type="text" placeholder="Search history" size="50" onKeyUp={this.CaptureValue}/>
+            <div className="history-search-main-container">
+                <img src = "https://assets.ccbp.in/frontend/react-js/history-website-logo-img.png" alt = "app logo" className="BrowserHistory-logo-img"/>
+                <div className="history-search-bar">
+                    <img src = "https://assets.ccbp.in/frontend/react-js/search-img.png" alt = "search" className="history-search-img"/>
+                    <input className="history-input" type="text" placeholder="Search history" size="50" onKeyUp={this.CaptureValue}/>
                 </div>
             </div>
         )

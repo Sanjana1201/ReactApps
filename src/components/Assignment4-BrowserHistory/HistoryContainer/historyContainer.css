@@ -1,9 +1,9 @@
-.history-cars-container{
+.history-cards-container{
     margin: 60px;
     padding: 20px;
     box-shadow: 0 0 7px #ececec;
 }
-.container{
+.history-container{
     height: 80vh;
 }
 

@@ -1,4 +1,4 @@
-.card-container{
+.browser-card-container{
     display: grid;
     grid-template-columns: 2fr 1fr 9fr 2fr;
     padding: 20px 0;
@@ -26,15 +26,15 @@
     flex-wrap: wrap;
 }
 
-.domain{
+.history-card-domain{
     font-weight: 400;
     margin-left: 10px;
 }
 
-.logo{
+.history-card-logologo{
     width: 33px;
 }
-.delete-button{
+.history-delete-button{
     margin: auto;
     border: 0;
     background-color: white;

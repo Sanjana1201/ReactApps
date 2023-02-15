@@ -10,18 +10,18 @@ class HistoryCard extends Component{
     render(){
         const { historyTime, historyLogoUrl, historyTitle, historyDomainUrl} = this.props;
         return(
-            <div className="card-container">
+            <div className="browser-card-container">
                 <div className="history-card-time">
                     {historyTime}
                 </div>
                 <div className="history-card-logo">
-                    <img src={historyLogoUrl} alt="site-logo" className="logo"/>
+                    <img src={historyLogoUrl} alt="site-logo" className="history-card-logo"/>
                 </div>
                 <div className="history-card-details">
                     {historyTitle}
-                    <span className="domain">{historyDomainUrl}</span>
+                    <span className="history-card-domain">{historyDomainUrl}</span>
                 </div>
-                <button className="delete-button" onClick={this.removeHistory}>
+                <button className="history-delete-button" onClick={this.removeHistory}>
                     <img src="https://assets.ccbp.in/frontend/react-js/delete-img.png " alt="delete" />
                 </button>
             </div>

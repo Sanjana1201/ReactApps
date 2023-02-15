@@ -46,17 +46,17 @@ class SetNewPassword extends Component{
             <div className="password-setup">
                 <div className="password-form">
                     <h2>Add new Password</h2>
-                    <div className="search-bar">
-                        <img src = "https://assets.ccbp.in/frontend/react-js/password-manager-website-img.png" alt="website" className="search-img"/>
-                        <input type="text" placeholder="Enter Website" id="website"  />
+                    <div className="password-search-bar">
+                        <img src = "https://assets.ccbp.in/frontend/react-js/password-manager-website-img.png" alt="website" className="password-search-img"/>
+                        <input type="text" placeholder="Enter Website" id="website" className="password-input" />
                     </div>
-                    <div className="search-bar">
-                        <img src = "https://assets.ccbp.in/frontend/react-js/password-manager-username-img.png" alt = "username" className="search-img"/>
-                        <input type="text" placeholder="Enter Username" id="username" />
+                    <div className="password-search-bar">
+                        <img src = "https://assets.ccbp.in/frontend/react-js/password-manager-username-img.png" alt = "username" className="password-search-img"/>
+                        <input type="text" placeholder="Enter Username" id="username" className="password-input"/>
                     </div>
-                    <div className="search-bar">
-                        <img src = "https://assets.ccbp.in/frontend/react-js/password-manager-password-img.png" alt = "password" className="search-img"/>
-                        <input type="password" placeholder="Enter Password" id="password"/>
+                    <div className="password-search-bar">
+                        <img src = "https://assets.ccbp.in/frontend/react-js/password-manager-password-img.png" alt = "password" className="password-search-img"/>
+                        <input type="password" placeholder="Enter Password" id="password" className="password-input"/>
                     </div>
                     <button className="add-btn" onClick={this.addNewPassword}>Add</button>
                 </div>

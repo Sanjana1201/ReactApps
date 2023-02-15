@@ -3,7 +3,7 @@ import "./index.css";
 
 const message = () =>{
     return (
-        <div className="main-container">
+        <div className="notification-main-container">
             <Notification />
         </div>
     )

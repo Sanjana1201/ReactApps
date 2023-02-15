@@ -1,4 +1,4 @@
-.container{
+.lnd-container{
     width: 300px;
     padding:20px;
     border: 1px solid;
@@ -8,7 +8,7 @@
     align-items: center;
     margin-top: 10%;
 }
-.main-container{
+.lnd-main-container{
     display: flex;
     justify-content: center;
 }
