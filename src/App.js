@@ -3,7 +3,8 @@
 // import ClickCounter from './components/Practice1_clockCounter/index/index.js';
 // import LightDarkMode from './components/Assignment3-Light&DarkMode/index/index.js';
 // import LiftingStateUp from './components/Practice2_LiftingStateUp/index.js'
-import BrowserHistory from './components/Assignment4-BrowserHistory/index/index.js'
+// import BrowserHistory from './components/Assignment4-BrowserHistory/index/index.js';
+import PasswordManager from './components/Assignment5-PasswordManager/index/index.js';
 
 
 function App() {
@@ -14,8 +15,8 @@ function App() {
       {/* <ClickCounter /> */}
       {/* <LightDarkMode /> */}
       {/* <LiftingStateUp /> */}
-      <BrowserHistory />
-      
+      {/* <BrowserHistory /> */}
+      <PasswordManager />
     </div>
     
   );
