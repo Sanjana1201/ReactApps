@@ -37,7 +37,5 @@ input[type=text]:focus {
 }
 .search-bar{
     display: flex;
-    margin: auto;
-    
-    
+    margin: auto; 
 }
