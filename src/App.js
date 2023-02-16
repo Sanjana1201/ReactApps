@@ -1,4 +1,4 @@
-import { BrowserRouter, Route,Switch} from "react-router-dom";
+import { HashRouter, Route,Switch} from "react-router-dom";
 
 import NotificationSection from './components/Assignment1';
 import TechnologySection from './components/Assignment2';
@@ -12,7 +12,7 @@ import HomePage from './components/Home/index.js';
 
 const App = () => {
   return(
-    <BrowserRouter>
+    <HashRouter>
     <HomePage />
     <Switch>
       <Route exact path = "/path1" component={NotificationSection}/>
@@ -30,7 +30,7 @@ const App = () => {
         <BrowserHistory />
         <PasswordManager /> */}
         </Switch>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
