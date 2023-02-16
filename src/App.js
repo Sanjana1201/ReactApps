@@ -8,6 +8,7 @@ import LiftingStateUp from './components/Practice2_LiftingStateUp'
 import BrowserHistory from './components/Assignment4-BrowserHistory/index';
 import PasswordManager from './components/Assignment5-PasswordManager/index';
 import HomePage from './components/Home/index.js';
+// import TestFile from './components/test/index.js';
 
 
 const App = () => {
@@ -31,6 +32,9 @@ const App = () => {
         <PasswordManager /> */}
         </Switch>
     </HashRouter>
+    // <div>
+    //   <TestFile />
+    // </div>
   )
 }
 
