@@ -1,12 +1,12 @@
 import { Component } from "react";
+import InnerChild from './innerChild';
+import { Button2Css } from "./styledComponent";
 
 class Child2 extends Component{
     render(){
-        const temp = "again called"
         return (
             <div>
-                {temp}
-                Child2 was called;
+                <InnerChild buttonCSS = {Button2Css}/>
             </div>
         )
     }

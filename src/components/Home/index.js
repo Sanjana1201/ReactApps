@@ -26,6 +26,9 @@
             <li>
                 <Link to = "/path7">Password manager</Link>
             </li>
+            <li>
+                <Link to = "/path8">IPL Dashboard</Link>
+            </li>
         </ul>
     </div>
     )
