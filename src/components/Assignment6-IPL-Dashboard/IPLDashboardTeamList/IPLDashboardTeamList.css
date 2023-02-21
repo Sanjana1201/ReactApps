@@ -1,0 +1,10 @@
+.dashboard-team-list-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 1021px) {
+    .dashboard-team-list-container{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,24 +1,35 @@
-import { Component } from "react";
-import Child1 from "./child1.js";
-import Child2 from "./child2.js";
+import {useState} from 'react'
+import {StyledDiv} from './styledComponent.js'
 
 
-class Test extends Component{
-    state = ({currState: "State Called"});
 
-    changeState = () => {
-        this.setState({currState: "State Changed"});
+const Test = () => {
+    const [mode,setMode] = useState('lock');
+
+    const changeMode = () =>{
+        setMode(mode === 'lock'? 'unlock' : 'lock');
     }
 
-    render(){
-        return (
-            <div>
-                <Child1 stateChanged = {this.state.currState}/>
-                <Child2 />
-                <button onClick={this.changeState}/>
-            </div>
-        )
+    const changeImage = () =>{
+        const currUrl = mode === 'lock' ? 'https://assets.ccbp.in/frontend/hooks/lock-img.png':"https://assets.ccbp.in/frontend/hooks/unlock-img.png";
+        console.log(currUrl);
+        return currUrl;
     }
+
+    const changeText = () =>{
+        const currText = mode === 'lock'? 'Your device is Unlocked':'Your device is Locked';
+        return currText;
+    }
+
+    return (
+        <div>
+            <StyledDiv >
+                <img src={changeImage()} alt = {mode}/>
+                <h1>{changeText()}</h1>
+                <button onClick={changeMode}>changeMode</button>
+            </StyledDiv>
+        </div>
+    )
 }
 
 export default Test;

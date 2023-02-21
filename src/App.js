@@ -1,5 +1,9 @@
 import { HashRouter, Route,Switch} from "react-router-dom";
 
+import IplDashboard from "./components/Assignment6-IPL-Dashboard/index";
+import IPLTeamMatches from "./components/Assignment6-IPL-Dashboard/TeamMatches/teamMatches.js";
+import NotFoundPage from './components/Assignment6-IPL-Dashboard/NotFound/NotFound.js'
+
 import NotificationSection from './components/Assignment1';
 import TechnologySection from './components/Assignment2';
 import ClickCounter from './components/Practice1_clockCounter/index';
@@ -8,14 +12,15 @@ import LiftingStateUp from './components/Practice2_LiftingStateUp'
 import BrowserHistory from './components/Assignment4-BrowserHistory/index';
 import PasswordManager from './components/Assignment5-PasswordManager/index';
 import HomePage from './components/Home/index.js';
+
 // import TestFile from './components/test/index.js';
 
 
 const App = () => {
   return(
     <HashRouter>
-    <HomePage />
     <Switch>
+    <Route exact path = "/" component ={HomePage}/>
       <Route exact path = "/path1" component={NotificationSection}/>
       <Route exact path = "/path2" component ={TechnologySection} />
       <Route exact path = "/path3" component ={ClickCounter} />
@@ -23,14 +28,10 @@ const App = () => {
       <Route exact path = "/path5" component ={LiftingStateUp} />
       <Route exact path = "/path6" component ={BrowserHistory} />
       <Route exact path = "/path7" component ={PasswordManager} />
-        {/* <NotificationSection />
-        <TechnologySection />
-        <ClickCounter />
-        <LightDarkMode />
-        <LiftingStateUp />
-        <BrowserHistory />
-        <PasswordManager /> */}
-        </Switch>
+      <Route exact path = "/path8" component ={IplDashboard}/>
+      <Route exact path = "/path8/team-matches/:id" component ={IPLTeamMatches}/>
+      <Route path='*' component={NotFoundPage} />
+      </Switch>
     </HashRouter>
     // <div>
     //   <TestFile />
