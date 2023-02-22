@@ -1,5 +1,5 @@
 import "styled-components/macro"
-import {ButtonStyles} from "./styledComponent"
+import {ButtonStyles} from "../styledComponent"
 
 
 const InnerChild = (props) =>{

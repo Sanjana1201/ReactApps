@@ -1,6 +1,6 @@
 import { Component } from "react";
 import InnerChild from './innerChild';
-import { Button1Css } from "./styledComponent";
+import { Button1Css } from "../styledComponent";
 
 class Child1 extends Component{
     render(){
