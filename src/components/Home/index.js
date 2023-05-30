@@ -29,6 +29,15 @@
             <li>
                 <Link to = "/path8">IPL Dashboard</Link>
             </li>
+            <li>
+                <Link to = "/path9">Todo List</Link>
+            </li>
+            <li>
+                <Link to = "/path10">Hooks Traffic Light</Link>
+            </li>
+            <li>
+                <Link to = "/path11">Hooks Timer</Link>
+            </li>
         </ul>
     </div>
     )
