@@ -1,11 +1,12 @@
 import { Component } from "react";
+import InnerChild from './innerChild';
+import { Button1Css } from "../styledComponent";
 
 class Child1 extends Component{
     render(){
         return (
             <div>
-            {this.props.stateChanged}
-                Child1 was called;
+                <InnerChild buttonCSS={Button1Css}/>
             </div>
         )
     }

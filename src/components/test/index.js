@@ -1,24 +1,29 @@
-import { Component } from "react";
-import Child1 from "./child1.js";
-import Child2 from "./child2.js";
+import { useState,useEffect } from "react";
 
+const Todo = () =>{
 
-class Test extends Component{
-    state = ({currState: "State Called"});
+    const [todos,setTodos] = useState([{key: "value"}]);
 
-    changeState = () => {
-        this.setState({currState: "State Changed"});
-    }
+    useEffect(()=>{
+        function fetchTodos(){
+            fetch("https://6325a6b74cd1a2834c41e69e.mockapi.io/todo-list/todos")
+            .then(res=>res.json())
+            .then(data=>{
+                console.log(data);
+            })
+        }
+        if(todos.length===0){
+            fetchTodos();
+        }
+        else{
+            console.log(todos);
+        }
+    },[]);
 
-    render(){
-        return (
-            <div>
-                <Child1 stateChanged = {this.state.currState}/>
-                <Child2 />
-                <button onClick={this.changeState}/>
-            </div>
-        )
-    }
+    return(
+        <div>
+            klklkkl
+        </div>
+    )
 }
-
-export default Test;
+export default Todo;

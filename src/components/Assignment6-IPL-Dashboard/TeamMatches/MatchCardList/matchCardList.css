@@ -1,0 +1,8 @@
+.matchList-main-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 25px;
+    padding: 50px 0;
+    /* justify-content: center; */
+    /* align-items: stretch; */
+}
